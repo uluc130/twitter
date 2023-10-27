@@ -14,7 +14,7 @@ struct SearchCell: View {
     var body: some View {
         
         HStack {
-            VStack(alignment: .leading, spacing: 5) {
+            VStack(alignment: .leading, spacing:5) {
                 Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
                     .fontWeight(.heavy)
                 Text(tweets + " Tweets")
@@ -25,6 +25,7 @@ struct SearchCell: View {
             Spacer()
         }
         .padding(.leading)
+        .padding(.bottom, 10)
         
     }
 }

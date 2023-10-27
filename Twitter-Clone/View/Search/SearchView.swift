@@ -10,31 +10,35 @@ import SwiftUI
 struct SearchView: View {
     @State private var text = ""
     @State private var isEditing = false
+    @ObservedObject var viewModel = SearchViewModel()
+    
+    var filteredUsers: [User] {
+        return text.isEmpty ? viewModel.users : viewModel.filterUsers(text)
+    }
     
     var body: some View {
-        VStack{
-            SearchBar(searchText: $text, isEditing: $isEditing)
-                .padding(.horizontal)
-            if !isEditing{
-                ForEach(0..<9) { item in
-                    SearchCell(tweets: String(item), tag: "Hello")
+        NavigationStack {
+            VStack{
+                ScrollView{
+                    SearchBar(searchText: $text, isEditing: $isEditing)
+                        .padding(.horizontal)
+                        
+    //                if !isEditing{
+                    LazyVStack {
+                        ForEach(filteredUsers) { user in
+                            NavigationLink {
+                                UserProfile(user: user)
+                            } label: {
+                                SearchUserCell(user: user)
+                                    .padding(.leading)
+                            }
+
+                        }
+                    }
                 }
-                
-                .listStyle(.grouped)
-            } else{
-                List(0..<9) { item in
-                    SearchUserCell()
-                }
-                
-                .listStyle(.grouped)
             }
         }
        
     }
 }
 
-struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchView()
-    }
-}

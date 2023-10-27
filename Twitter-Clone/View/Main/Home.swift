@@ -40,7 +40,7 @@ struct Home: View {
                                 Image("Search")
                             }
                         }.tag(1)
-                    NotificationsView()
+                    NotificationsView(user: user)
                         .tabItem {
                             if selectedTab == 2 {
                                 Image("Notifications")

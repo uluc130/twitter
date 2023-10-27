@@ -96,7 +96,7 @@ struct SlideMenu: View {
                             Divider()
                             
                             Button {
-                                
+                                viewModel.logout()
                             } label: {
                                 Text("Settings and Privacy")
                                     .foregroundColor(.black)

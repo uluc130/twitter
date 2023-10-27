@@ -19,7 +19,8 @@ class TweetCellViewModel: ObservableObject{
     }
     
     func fetchUser(userId: String) {
-        AuthServices.fetchUser(id: userId) { result in
+        AuthServices.requestDomain = "http://localhost:3000/users/\(userId)"
+        AuthServices.fetchUser() { result in
             switch result {
                 case .success(let data):
                     guard let user = try? JSONDecoder().decode(User.self, from: data!) else {return}
@@ -27,35 +28,42 @@ class TweetCellViewModel: ObservableObject{
                         
                         self.user = user
                         
-                        print(user)
+                        
                     }
                 case .failure(let error):
                     print(error.localizedDescription)
-                    print("error")
+                    
             }
         }
     }
     
     func likeTweet(){
+        
+        guard let authedUser = AuthViewModel.shared.currentUser else{return}
+        
         RequestServices.requestDomain = "http://localhost:3000/tweets/\(tweet.id)/like"
         RequestServices.likingProcess { result in
-            print("liked")
-            print(result!)
+//            print("liked")
+//            print(result!)
+        }
+        RequestServices.requestDomain = "http://localhost:3000/notification"
+        RequestServices.sendNotification(username: authedUser.username, notSenderId: authedUser.id, notReceiverID: self.tweet.userID, postText: "", notificationType: NotificationType.like.rawValue) { result in
+            print(NotificationType.like.notificationMessage)
         }
         self.tweet.isLiked = true
     }
     func unlikeTweet(){
         RequestServices.requestDomain = "http://localhost:3000/tweets/\(tweet.id)/unlike"
         RequestServices.likingProcess { result in
-            print("unliked")
-            print(result!)
+//            print("unliked")
+//            print(result!)
         }
         self.tweet.isLiked = false
     }
     func checkIfIsLiked() {
         if(self.tweet.likes.contains(AuthViewModel.shared.currentUser!.id)) {
             self.tweet.isLiked = true
-            print ("liked1")
+            
         } else {
             self.tweet.isLiked = false
         }

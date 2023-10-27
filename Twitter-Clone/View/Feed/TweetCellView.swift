@@ -44,12 +44,7 @@ struct TweetCellView: View {
                                 .clipShape(Circle())
                     }
                 }
-                
-//                Image("logo")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fill)
-//                    .frame(width: 55, height: 55)
-//                    .clipShape(Circle())
+
                 VStack (alignment: .leading, spacing: 10){
                     Text(self.viewModel.tweet.username)
                         .fontWeight(.bold)

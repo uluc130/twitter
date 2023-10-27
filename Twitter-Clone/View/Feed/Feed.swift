@@ -13,35 +13,24 @@ struct Feed: View {
     
     var body: some View {
         
-        ScrollView(.vertical){
-            VStack{
-               
+        RefreshableScrollView {
+            ScrollView(.vertical){
+                VStack{
                     ForEach(viewModel.tweets){ tweet in
-                        
                         TweetCellView(viewModel: TweetCellViewModel(tweet: tweet))
-                        
-                        
                     }
-               
-                
-                
-//                TweetCellView(tweetImage: "post", tweet: "Hey Tim, are those regular glasses?")
-//
-//                Divider()
-//                ForEach (1..<9){ item in
-//                    TweetCellView(tweet: sampleText)
-//                    Divider()
-//                }
+                }
+                .padding(.top)
+                .padding(.horizontal)
+                .zIndex(0)
             }
-            .padding(.top)
-            .padding(.horizontal)
-            .zIndex(0)
+        } onRefresh: { control in
+            DispatchQueue.main.async {
+                viewModel.fetchTweets()
+                control.endRefreshing()
+            }
         }
+
     }
 }
 
-//struct Feed_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Feed()
-//    }
-//}

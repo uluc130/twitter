@@ -14,40 +14,118 @@
             filePath = "Twitter-Clone/View/Notifications/NotificationCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "95FCD7A6-1A89-45F5-920E-EA31B4E4CB22 - a6191752dc8e6863"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.opacity(Swift.Double) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in Twitter_Clone.NotificationCell.body.getter : some"
-                  moduleName = "Twitter-Clone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/uluchosgelen/Documents/Practices/Twitter-Clone/Twitter-Clone/View/Notifications/NotificationCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "1244">
-               </Location>
-               <Location
-                  uuid = "95FCD7A6-1A89-45F5-920E-EA31B4E4CB22 - ed0f77f3c64f7944"
+                  uuid = "95FCD7A6-1A89-45F5-920E-EA31B4E4CB22 - 27df4ccf01de81b2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.opacity(Swift.Double) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.clipShape&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.Shape&gt;(_: &#x3c4;_1_0, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0, SwiftUI.Text)&gt;&gt;, SwiftUI.Spacer)&gt;&gt;)&gt; in Twitter_Clone.NotificationCell.body.getter : some"
                   moduleName = "Twitter-Clone"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/uluchosgelen/Documents/Practices/Twitter-Clone/Twitter-Clone/View/Notifications/NotificationCell.swift"
+                  urlString = "file:///Users/uluchosgelen/Desktop/Twitter-Clone/Twitter-Clone/View/Notifications/NotificationCell.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "2208">
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2408">
+               </Location>
+               <Location
+                  uuid = "95FCD7A6-1A89-45F5-920E-EA31B4E4CB22 - 27df4ccf01de8191"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.opacity(Swift.Double) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.clipShape&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.Shape&gt;(_: &#x3c4;_1_0, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0, SwiftUI.Text)&gt;&gt;, SwiftUI.Spacer)&gt;&gt;)&gt; in Twitter_Clone.NotificationCell.body.getter : some"
+                  moduleName = "Twitter-Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uluchosgelen/Desktop/Twitter-Clone/Twitter-Clone/View/Notifications/NotificationCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "2408">
+               </Location>
+               <Location
+                  uuid = "95FCD7A6-1A89-45F5-920E-EA31B4E4CB22 - 6cc92c6e1b1f9097"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.opacity(Swift.Double) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in Twitter_Clone.NotificationCell.body.getter : some"
+                  moduleName = "Twitter-Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uluchosgelen/Desktop/Twitter-Clone/Twitter-Clone/View/Notifications/NotificationCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "3172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "051412C2-638D-4A5E-A092-3EDF6E422E84"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Twitter-Clone/View/Notifications/NotificationCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "NotificationCell"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "051412C2-638D-4A5E-A092-3EDF6E422E84 - 2334c91d68715092"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of Twitter_Clone.NotificationCell.width : CoreGraphics.CGFloat"
+                  moduleName = "Twitter-Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uluchosgelen/Desktop/Twitter-Clone/Twitter-Clone/View/Notifications/NotificationCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "051412C2-638D-4A5E-A092-3EDF6E422E84 - 4700214334b9b244"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Twitter_Clone.NotificationCell.init(notification: Twitter_Clone.Notification) -&gt; Twitter_Clone.NotificationCell"
+                  moduleName = "Twitter-Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uluchosgelen/Desktop/Twitter-Clone/Twitter-Clone/View/Notifications/NotificationCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "051412C2-638D-4A5E-A092-3EDF6E422E84 - 4700214334b9b223"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Twitter_Clone.NotificationCell.init(notification: Twitter_Clone.Notification) -&gt; Twitter_Clone.NotificationCell"
+                  moduleName = "Twitter-Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/uluchosgelen/Desktop/Twitter-Clone/Twitter-Clone/View/Notifications/NotificationCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
          </BreakpointContent>

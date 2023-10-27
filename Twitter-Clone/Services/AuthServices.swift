@@ -21,9 +21,9 @@ enum AuthenticationError: Error{
 
 public class AuthServices{
     
-    
-    static func fetchUser(id: String, completition: @escaping (_ result: Result<Data?, AuthenticationError>)->Void){
-        let url = URL(string: "http://localhost:3000/users/\(id)")!
+    public static var requestDomain = ""
+    static func fetchUser(completition: @escaping (_ result: Result<Data?, AuthenticationError>)->Void){
+        let url = URL(string: requestDomain)!
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -46,7 +46,7 @@ public class AuthServices{
             
             do{
                 if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String:Any]{
-                    
+                   
                 }
             }
             catch let err{
@@ -122,7 +122,7 @@ public class AuthServices{
             
             do{
                 if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any]{
-                    print(json)
+                    
                 }
             }
             catch let error {

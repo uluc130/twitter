@@ -18,16 +18,16 @@ class FetchTweetsViewModel: ObservableObject{
         
         RequestServices.requestDomain = "http://localhost:3000/tweets"
         
-        RequestServices.fetchTweets { result in
+        RequestServices.fetchData { result in
             switch result {
                 case .success(let data):
-                   print("success")
+                   
                 do{
                     let tweets = try JSONDecoder().decode([Tweet].self, from: data!)
-//                       DispatchQueue.main.async {
+                       DispatchQueue.main.async {
                            self.tweets = tweets
-                           print("hello")
-//                       }
+                           
+                       }
                    
                 } catch let error{
                     print(error.localizedDescription)
@@ -39,7 +39,7 @@ class FetchTweetsViewModel: ObservableObject{
                 
                 case .failure(let error):
                     print(error.localizedDescription)
-                    print("error")
+                    
             }
         }
         

@@ -102,7 +102,7 @@ struct UserProfile: View {
                             
                             Spacer()
                             
-                            if self.isCurrentUser {
+                            if (self.isCurrentUser) {
                                 Button {
                                     showEditProfile.toggle()
                                 } label: {
@@ -118,6 +118,7 @@ struct UserProfile: View {
                                     EditProfile(user: $viewModel.user)
                                 }
                             } else {
+                              
                                 if !self.isFollowed {
                                     Button {
                                         viewModel.follow()
@@ -249,7 +250,8 @@ struct UserProfile: View {
                     .zIndex(-offset > 80 ? 0 : 1)
                 }
                 
-            }.toolbar(.hidden)
+            }
+                
         }
     }
     
